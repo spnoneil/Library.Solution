@@ -8,7 +8,7 @@ namespace Factory.Controllers
 {
   public class AccountController : Controller
   {
-    private readonly FactoryContext _db;
+    private readonly LibraryContext _db;
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly SignInManager<ApplicationUser> _signInManager;
 

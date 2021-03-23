@@ -6,3 +6,4 @@ coverage/
 */bin/
 */appsettings.json
 */whiteboard.txt
+.vscode
