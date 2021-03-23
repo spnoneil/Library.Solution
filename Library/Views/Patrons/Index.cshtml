@@ -1,0 +1,24 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Library Catalog</h1>
+
+@* SEARCH GOES HERE *@
+
+@using Library.Models;
+@model IEnumerable<Library.Models.Book>;
+
+@if (Model.Any())
+{
+  <ul>
+    @foreach (Book element in Model)
+    {
+      <li>@Html.ActionLink($"{element.BookTitle}", "Details", new { id = element.BookId})</li>
+    }
+  </ul>
+}
+else
+{
+  <h4>No books have been added!</h4>
+}
